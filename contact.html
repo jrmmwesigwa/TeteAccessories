@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Tete Accessories</title>
+    <meta name="description" content="Get in touch with Tete Accessories for inquiries, custom orders, or visit our store in Kampala, Uganda.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">Tete<span>Accessories</span></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#" id="search-icon"><i class="fas fa-search"></i></a>
+                <a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span></a>
+                <button class="menu-toggle" id="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="search-overlay">
+        <div class="search-container">
+            <form>
+                <input type="text" placeholder="Search for jewelry...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be inserted here via JavaScript -->
+        </div>
+        <div class="cart-total">
+            <p>Total: <span id="cart-total-amount">UGX 0</span></p>
+        </div>
+        <div class="cart-buttons">
+            <button class="btn" id="clear-cart">Clear Cart</button>
+            <button class="btn btn-primary" id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <main>
+        <section class="page-header">
+            <div class="page-header-content">
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-info-header">
+                            <h2>Get In Touch</h2>
+                            <p>Have a question or inquiry? Contact us using any of the methods below or fill out the form and we'll get back to you as soon as possible.</p>
+                        </div>
+                        <div class="contact-info-content">
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Visit Our Store</h3>
+                                    <p>Kampala Road, Kampala, Uganda</p>
+                                    <p>Near Central Market, 2nd Floor</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Call Us</h3>
+                                    <p>+256 700 123 456</p>
+                                    <p>+256 772 987 654</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Email Us</h3>
+                                    <p>info@teteaccessories.com</p>
+                                    <p>sales@teteaccessories.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Opening Hours</h3>
+                                    <p>Monday - Friday: 10:00 - 19:00</p>
+                                    <p>Saturday: 10:00 - 17:00</p>
+                                    <p>Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-media-contact">
+                            <h3>Follow Us</h3>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <h2>Send Us a Message</h2>
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">Subscribe to our newsletter for updates and exclusive offers</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Find Us</h2>
+                    <p>Visit our store in Kampala</p>
+                </div>
+                <div class="map-container">
+                    <!-- Embedded Google Map would go here in a real project -->
+                    <div class="map-placeholder">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63838.40812753263!2d32.535028!3d0.3145041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbc0f8f4696bd%3A0x4e6b0d196bf21560!2sKampala%2C%20Uganda!5e0!3m2!1sen!2sus!4v1587387265657!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Find answers to common questions about our products and services</p>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you offer customized jewelry?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer customized jewelry services for special occasions like weddings, anniversaries, and birthdays. Contact us with your requirements, and our team will work with you to create a unique piece that fits your vision and budget.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What are your shipping options and delivery times?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We offer free shipping on orders above UGX 100,000 within Kampala. Standard delivery takes 2-3 business days within Kampala and 3-7 business days for other regions in Uganda. Express delivery is available for an additional fee with next-day delivery in Kampala and 2-3 days for other regions.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What is your return and exchange policy?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We accept returns and exchanges within 14 days of purchase. Items must be in their original condition and packaging. Custom-made items cannot be returned unless there is a manufacturing defect. Please contact us to initiate a return or exchange.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do I care for my jewelry?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>To keep your jewelry looking its best, we recommend storing pieces separately to prevent scratching, removing jewelry before showering or swimming, and cleaning with a soft cloth. For detailed care instructions specific to your jewelry type, please refer to the care card included with your purchase or contact us.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What payment methods do you accept?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We accept various payment methods including Mobile Money (MTN and Airtel), credit/debit cards, and cash on delivery for orders within Kampala. All online transactions are secured with industry-standard encryption to protect your payment information.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Need Help Choosing the Perfect Piece?</h2>
+                    <p>Our jewelry consultants are here to help you find the perfect accessory for any occasion.</p>
+                    <div class="cta-buttons">
+                        <a href="tel:+256700123456" class="btn btn-primary"><i class="fas fa-phone"></i> Call Now</a>
+                        <a href="products.html" class="btn btn-secondary">Shop Our Collection</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Stay Connected</h2>
+                <p>Subscribe to our newsletter for exclusive offers, new product releases, and styling tips.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <a href="index.html">Tete<span>Accessories</span></a>
+                </div>
+                <p>Handcrafted jewelry that adds elegance and sparkle to your everyday style. Made with love in Uganda.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Customer Care</h3>
+                <ul>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Care Instructions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> Kampala Road, Kampala, Uganda</li>
+                    <li><i class="fas fa-phone"></i> +256 700 123 456</li>
+                    <li><i class="fas fa-envelope"></i> info@teteaccessories.com</li>
+                    <li><i class="fas fa-clock"></i> Mon - Sat: 10:00 - 19:00</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tete Accessories. All Rights Reserved.</p>
+            <div class="payment-methods">
+                <span>Payment Methods:</span>
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fas fa-mobile-alt"></i> Mobile Money
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Form Success Modal -->
+    <div class="modal" id="contact-success-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="success-message">
+                <i class="fas fa-check-circle"></i>
+                <h2>Thank You for Contacting Us!</h2>
+                <p>Your message has been successfully sent. We will get back to you soon.</p>
+                <button class="btn btn-primary close-success-modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal" id="checkout-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Checkout</h2>
+            <div class="checkout-content">
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div class="cart-summary">
+                        <!-- Cart summary will be inserted here via JavaScript -->
+                    </div>
+                    <div class="order-total">
+                        <p>Total: <span id="order-total-amount">UGX 0</span></p>
+                    </div>
+                </div>
+                <div class="payment-section">
+                    <h3>Payment Method</h3>
+                    <div class="payment-options">
+                        <div class="payment-option">
+                            <input type="radio" id="mobile-money" name="payment-method" value="mobile-money" checked>
+                            <label for="mobile-money">Mobile Money</label>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" id="credit-card" name="payment-method" value="credit-card">
+                            <label for="credit-card">Credit Card</label>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" id="cash-on-delivery" name="payment-method" value="cash-on-delivery">
+                            <label for="cash-on-delivery">Cash on Delivery</label>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-form mobile-money-form">
+                        <div class="form-group">
+                            <label for="mobile-provider">Select Provider:</label>
+                            <select id="mobile-provider">
+                                <option value="mtn">MTN Mobile Money</option>
+                                <option value="airtel">Airtel Money</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-number">Phone Number:</label>
+                            <input type="tel" id="phone-number" placeholder="e.g., 0770123456" required>
+                        </div>
+                        <p class="payment-instruction">You will receive a prompt on your phone to confirm the payment.</p>
+                    </div>
+                    
+                    <div class="payment-form credit-card-form hidden">
+                        <div class="form-group">
+                            <label for="card-number">Card Number:</label>
+                            <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="expiry-date">Expiry Date:</label>
+                                <input type="text" id="expiry-date" placeholder="MM/YY" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv">CVV:</label>
+                                <input type="text" id="cvv" placeholder="123" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="card-name">Name on Card:</label>
+                            <input type="text" id="card-name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-form cash-on-delivery-form hidden">
+                        <p class="payment-instruction">Pay in cash when your order is delivered.</p>
+                    </div>
+                </div>
+                
+                <div class="shipping-section">
+                    <h3>Shipping Information</h3>
+                    <div class="form-group">
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">City:</label>
+                            <input type="text" id="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="postal-code">Postal Code:</label>
+                            <input type="text" id="postal-code">
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="btn btn-primary" id="place-order-btn">Place Order</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Order Confirmation Modal -->
+    <div class="modal" id="order-confirmation-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="order-confirmation">
+                <i class="fas fa-check-circle"></i>
+                <h2>Thank You for Your Order!</h2>
+                <p>Your order has been successfully placed.</p>
+                <p>Order #: <span id="order-number">TET-2025-1234</span></p>
+                <p>We've sent a confirmation email with the order details.</p>
+                <div class="mobile-money-instructions">
+                    <h3>Mobile Money Payment Instructions:</h3>
+                    <p>1. You will receive a prompt on your phone to confirm the payment.</p>
+                    <p>2. Enter your PIN to approve the transaction.</p>
+                    <p>3. Once payment is confirmed, we'll process your order.</p>
+                </div>
+                <button class="btn btn-primary" id="continue-shopping-btn">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <script src="script.js"></script>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+</body>
+</html>

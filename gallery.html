@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Tete Accessories</title>
+    <meta name="description" content="Explore our gallery of beautiful handcrafted jewelry, customer stories, and behind-the-scenes at Tete Accessories in Uganda.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">Tete<span>Accessories</span></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#" id="search-icon"><i class="fas fa-search"></i></a>
+                <a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span></a>
+                <button class="menu-toggle" id="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="search-overlay">
+        <div class="search-container">
+            <form>
+                <input type="text" placeholder="Search for jewelry...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be inserted here via JavaScript -->
+        </div>
+        <div class="cart-total">
+            <p>Total: <span id="cart-total-amount">UGX 0</span></p>
+        </div>
+        <div class="cart-buttons">
+            <button class="btn" id="clear-cart">Clear Cart</button>
+            <button class="btn btn-primary" id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <main>
+        <section class="page-header">
+            <div class="page-header-content">
+                <h1>Our Gallery</h1>
+                <p>Explore our creations and customer stories</p>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-filter-tabs">
+                    <button class="gallery-tab active" data-filter="all">All</button>
+                    <button class="gallery-tab" data-filter="products">Products</button>
+                    <button class="gallery-tab" data-filter="customers">Customer Stories</button>
+                    <button class="gallery-tab" data-filter="workshop">Behind the Scenes</button>
+                    <button class="gallery-tab" data-filter="events">Events</button>
+                </div>
+
+                <div class="gallery-grid">
+                    <!-- Products -->
+                    <div class="gallery-item" data-category="products">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Silver necklace collection">
+                            <div class="gallery-overlay">
+                                <h3>Silver Elegance Collection</h3>
+                                <p>Our bestselling silver necklace designs</p>
+                                <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="products">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Statement rings collection">
+                            <div class="gallery-overlay">
+                                <h3>Bold Statement Rings</h3>
+                                <p>Make a statement with our unique ring designs</p>
+                                <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="products">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Bracelet set arrangement">
+                            <div class="gallery-overlay">
+                                <h3>Stacking Bracelets</h3>
+                                <p>Mix and match for your perfect combination</p>
+                                <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="products">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1596944924616-7b38e5e4e5c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Hair clips display">
+                            <div class="gallery-overlay">
+                                <h3>Pearl Hair Accessories</h3>
+                                <p>Elegant hair clips for special occasions</p>
+                                <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="products">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1610114928498-45b0206119e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Perfume bottles">
+                            <div class="gallery-overlay">
+                                <h3>Signature Scents</h3>
+                                <p>Our collection of premium perfume refillers</p>
+                                <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Customer Stories -->
+                    <div class="gallery-item" data-category="customers">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Customer wearing Tete jewelry">
+                            <div class="gallery-overlay">
+                                <h3>Sarah's Wedding</h3>
+                                <p>Custom bridal set created for Sarah's special day</p>
+                                <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="customers">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Customer testimonial">
+                            <div class="gallery-overlay">
+                                <h3>Graduation Day</h3>
+                                <p>Maria's graduation accessories shined on her big day</p>
+                                <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="customers">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Customer story">
+                            <div class="gallery-overlay">
+                                <h3>Anniversary Gift</h3>
+                                <p>David surprised his wife with our custom necklace</p>
+                                <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Workshop -->
+                    <div class="gallery-item" data-category="workshop">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1600054800747-be294a6a0d26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Jewelry making process">
+                            <div class="gallery-overlay">
+                                <h3>The Crafting Process</h3>
+                                <p>Handcrafting each piece with care and precision</p>
+                                <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="workshop">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Jewelry design process">
+                            <div class="gallery-overlay">
+                                <h3>Design Sketches</h3>
+                                <p>Where our ideas come to life on paper first</p>
+                                <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="workshop">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1624723079918-e62102483d04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Materials for jewelry making">
+                            <div class="gallery-overlay">
+                                <h3>Our Materials</h3>
+                                <p>Quality stones and metals from sustainable sources</p>
+                                <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="workshop">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1626285861696-9f0bf5a49c6d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Jewelry workshop">
+                            <div class="gallery-overlay">
+                                <h3>Our Workshop</h3>
+                                <p>Where craftsmanship meets creativity</p>
+                                <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Events -->
+                    <div class="gallery-item" data-category="events">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Jewelry exhibition">
+                            <div class="gallery-overlay">
+                                <h3>Annual Exhibition</h3>
+                                <p>Showcasing our latest collections at Kampala Design Week</p>
+                                <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="events">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1587899897387-091ebd01a6b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Jewelry workshop event">
+                            <div class="gallery-overlay">
+                                <h3>DIY Workshop</h3>
+                                <p>Teaching jewelry making skills to our community</p>
+                                <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="events">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1556035511-3168381ea4d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Fashion show featuring Tete jewelry">
+                            <div class="gallery-overlay">
+                                <h3>Runway Collaboration</h3>
+                                <p>Our pieces featured at Uganda Fashion Week</p>
+                                <a href="#" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="instagram-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Follow Us on Instagram</h2>
+                    <p>@teteaccessories_ug</p>
+                </div>
+                <div class="instagram-grid">
+                    <a href="https://instagram.com" target="_blank" class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1613152184920-bc490778fe2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Instagram post">
+                        <div class="instagram-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Instagram post">
+                        <div class="instagram-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Instagram post">
+                        <div class="instagram-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1611085583191-a3b181a88401?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Instagram post">
+                        <div class="instagram-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Instagram post">
+                        <div class="instagram-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1595188600511-1c47720ca7c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Instagram post">
+                        <div class="instagram-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="instagram-cta">
+                    <a href="https://instagram.com" target="_blank" class="btn btn-secondary">Follow Us</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-cta">
+            <div class="container">
+                <div class="gallery-cta-content">
+                    <h2>Share Your Tete Accessories Moments</h2>
+                    <p>Tag us using #TeteAccessories or #TeteSparkle on Instagram for a chance to be featured in our gallery!</p>
+                    <a href="contact.html" class="btn btn-primary">Submit Your Photos</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Stay Connected</h2>
+                <p>Subscribe to our newsletter for exclusive offers, new product releases, and styling tips.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <a href="index.html">Tete<span>Accessories</span></a>
+                </div>
+                <p>Handcrafted jewelry that adds elegance and sparkle to your everyday style. Made with love in Uganda.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Customer Care</h3>
+                <ul>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Care Instructions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> Kampala Road, Kampala, Uganda</li>
+                    <li><i class="fas fa-phone"></i> +256 700 123 456</li>
+                    <li><i class="fas fa-envelope"></i> info@teteaccessories.com</li>
+                    <li><i class="fas fa-clock"></i> Mon - Sat: 10:00 - 19:00</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tete Accessories. All Rights Reserved.</p>
+            <div class="payment-methods">
+                <span>Payment Methods:</span>
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fas fa-mobile-alt"></i> Mobile Money
+            </div>
+        </div>
+    </footer>
+
+    <!-- Gallery Modal -->
+    <div class="gallery-modal">
+        <span class="close-gallery-modal">&times;</span>
+        <img class="gallery-modal-content" id="gallery-modal-img">
+        <div class="gallery-modal-caption"></div>
+        <div class="gallery-modal-nav">
+            <button class="gallery-nav-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="gallery-nav-btn next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be inserted here via JavaScript -->
+        </div>
+        <div class="cart-total">
+            <p>Total: <span id="cart-total-amount">UGX 0</span></p>
+        </div>
+        <div class="cart-buttons">
+            <button class="btn" id="clear-cart">Clear Cart</button>
+            <button class="btn btn-primary" id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal" id="checkout-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Checkout</h2>
+            <div class="checkout-content">
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div class="cart-summary">
+                        <!-- Cart summary will be inserted here via JavaScript -->
+                    </div>
+                    <div class="order-total">
+                        <p>Total: <span id="order-total-amount">UGX 0</span></p>
+                    </div>
+                </div>
+                <div class="payment-section">
+                    <h3>Payment Method</h3>
+                    <div class="payment-options">
+                        <div class="payment-option">
+                            <input type="radio" id="mobile-money" name="payment-method" value="mobile-money" checked>
+                            <label for="mobile-money">Mobile Money</label>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" id="credit-card" name="payment-method" value="credit-card">
+                            <label for="credit-card">Credit Card</label>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" id="cash-on-delivery" name="payment-method" value="cash-on-delivery">
+                            <label for="cash-on-delivery">Cash on Delivery</label>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-form mobile-money-form">
+                        <div class="form-group">
+                            <label for="mobile-provider">Select Provider:</label>
+                            <select id="mobile-provider">
+                                <option value="mtn">MTN Mobile Money</option>
+                                <option value="airtel">Airtel Money</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-number">Phone Number:</label>
+                            <input type="tel" id="phone-number" placeholder="e.g., 0770123456" required>
+                        </div>
+                        <p class="payment-instruction">You will receive a prompt on your phone to confirm the payment.</p>
+                    </div>
+                    
+                    <div class="payment-form credit-card-form hidden">
+                        <div class="form-group">
+                            <label for="card-number">Card Number:</label>
+                            <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="expiry-date">Expiry Date:</label>
+                                <input type="text" id="expiry-date" placeholder="MM/YY" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv">CVV:</label>
+                                <input type="text" id="cvv" placeholder="123" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="card-name">Name on Card:</label>
+                            <input type="text" id="card-name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-form cash-on-delivery-form hidden">
+                        <p class="payment-instruction">Pay in cash when your order is delivered.</p>
+                    </div>
+                </div>
+                
+                <div class="shipping-section">
+                    <h3>Shipping Information</h3>
+                    <div class="form-group">
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">City:</label>
+                            <input type="text" id="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="postal-code">Postal Code:</label>
+                            <input type="text" id="postal-code">
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="btn btn-primary" id="place-order-btn">Place Order</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Order Confirmation Modal -->
+    <div class="modal" id="order-confirmation-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="order-confirmation">
+                <i class="fas fa-check-circle"></i>
+                <h2>Thank You for Your Order!</h2>
+                <p>Your order has been successfully placed.</p>
+                <p>Order #: <span id="order-number">TET-2025-1234</span></p>
+                <p>We've sent a confirmation email with the order details.</p>
+                <div class="mobile-money-instructions">
+                    <h3>Mobile Money Payment Instructions:</h3>
+                    <p>1. You will receive a prompt on your phone to confirm the payment.</p>
+                    <p>2. Enter your PIN to approve the transaction.</p>
+                    <p>3. Once payment is confirmed, we'll process your order.</p>
+                </div>
+                <button class="btn btn-primary" id="continue-shopping-btn">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <script src="script.js"></script>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+</body>
+</html>

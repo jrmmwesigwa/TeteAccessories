@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Tete Accessories</title>
+    <meta name="description" content="Learn about Tete Accessories, our story, mission and the passion behind our handcrafted jewelry in Uganda.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">Tete<span>Accessories</span></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#" id="search-icon"><i class="fas fa-search"></i></a>
+                <a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span></a>
+                <button class="menu-toggle" id="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="search-overlay">
+        <div class="search-container">
+            <form>
+                <input type="text" placeholder="Search for jewelry...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be inserted here via JavaScript -->
+        </div>
+        <div class="cart-total">
+            <p>Total: <span id="cart-total-amount">UGX 0</span></p>
+        </div>
+        <div class="cart-buttons">
+            <button class="btn" id="clear-cart">Clear Cart</button>
+            <button class="btn btn-primary" id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <main>
+        <section class="page-header">
+            <div class="page-header-content">
+                <h1>Our Story</h1>
+                <p>Meet the team behind Tete Accessories</p>
+            </div>
+        </section>
+
+        <section class="about-story">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1626285861696-9f0bf5a49c6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Tete Accessories Workshop">
+                    </div>
+                    <div class="about-content">
+                        <h2>The Tete Accessories Journey</h2>
+                        <p>Founded in 2015 in Kampala, Tete Accessories began with a passion for creating unique, handcrafted jewelry that celebrates Ugandan craftsmanship and style.</p>
+                        <p>Our founder, Sarah Nakimuli, started making jewelry as a hobby, inspired by the rich cultural heritage and vibrant colors of Uganda. What began as a small collection sold to friends and family has now grown into a beloved brand known for quality, creativity, and attention to detail.</p>
+                        <p>The name "Tete" - meaning "shine" in the local dialect - reflects our mission to help every woman shine with confidence through our carefully crafted accessories.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-mission">
+            <div class="container">
+                <div class="about-grid reverse">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Jewelry crafting in Uganda">
+                    </div>
+                    <div class="about-content">
+                        <h2>Our Mission & Values</h2>
+                        <div class="values-list">
+                            <div class="value-item">
+                                <div class="value-icon">
+                                    <i class="fas fa-gem"></i>
+                                </div>
+                                <div class="value-content">
+                                    <h3>Quality Craftsmanship</h3>
+                                    <p>We take pride in the quality of our work, using the finest materials and techniques to create jewelry that lasts.</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="value-content">
+                                    <h3>Made with Love</h3>
+                                    <p>Every piece is handcrafted with care and attention to detail, infusing our passion into each design.</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <div class="value-content">
+                                    <h3>Sustainable Practices</h3>
+                                    <p>We're committed to ethical sourcing and environmentally friendly production methods.</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">
+                                    <i class="fas fa-hands-helping"></i>
+                                </div>
+                                <div class="value-content">
+                                    <h3>Community Support</h3>
+                                    <p>We invest in our local community by providing training and employment opportunities.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Meet Our Team</h2>
+                    <p>The talented individuals behind our beautiful creations</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="team-image">
+                            <img src="https://randomuser.me/api/portraits/women/46.jpg" alt="Sarah Nakimuli">
+                        </div>
+                        <h3>Sarah Nakimuli</h3>
+                        <p class="member-role">Founder & Creative Director</p>
+                        <p class="member-bio">With a background in fine arts and a passion for jewelry, Sarah brings her creative vision to every collection.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-image">
+                            <img src="https://randomuser.me/api/portraits/men/58.jpg" alt="David Ochieng">
+                        </div>
+                        <h3>David Ochieng</h3>
+                        <p class="member-role">Lead Artisan</p>
+                        <p class="member-bio">David's skilled hands and eye for detail bring our most intricate designs to life.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-image">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Grace Auma">
+                        </div>
+                        <h3>Grace Auma</h3>
+                        <p class="member-role">Design Specialist</p>
+                        <p class="member-bio">Grace combines traditional techniques with modern design to create truly unique pieces.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-image">
+                            <img src="https://randomuser.me/api/portraits/women/67.jpg" alt="Florence Nabirye">
+                        </div>
+                        <h3>Florence Nabirye</h3>
+                        <p class="member-role">Customer Experience Manager</p>
+                        <p class="member-bio">Florence ensures every customer has a wonderful experience with Tete Accessories.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="workshop-section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Jewelry workshop">
+                    </div>
+                    <div class="about-content">
+                        <h2>Our Workshop</h2>
+                        <p>Located in the heart of Kampala, our workshop is where magic happens. It's here that raw materials are transformed into beautiful pieces of wearable art.</p>
+                        <p>We invite you to witness our artisans at work and see the meticulous process behind each Tete Accessories piece. Contact us to arrange a workshop visit and get a behind-the-scenes look at our craftsmanship.</p>
+                        <a href="contact.html" class="btn btn-primary">Arrange a Visit</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="section-header">
+                <h2>Our Happy Customers</h2>
+                <p>Hear from those who wear and love our jewelry</p>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"I've been a loyal customer since 2018. The quality and craftsmanship of each piece is outstanding. I always receive compliments when wearing my Tete jewelry."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/31.jpg" alt="Rebecca M.">
+                        <div>
+                            <h4>Rebecca M.</h4>
+                            <p>Kampala</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"I ordered a custom necklace for my wedding and couldn't be happier with the result. The team at Tete Accessories truly cares about their customers and their craft."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/15.jpg" alt="Janet K.">
+                        <div>
+                            <h4>Janet K.</h4>
+                            <p>Entebbe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"The hair clips I purchased for my daughter's graduation were absolutely perfect. She loved them, and they photographed beautifully. Thank you for making her day special!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Mary N.">
+                        <div>
+                            <h4>Mary N.</h4>
+                            <p>Jinja</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Stay Connected</h2>
+                <p>Join our community to receive updates on new collections, behind-the-scenes content, and exclusive offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <a href="index.html">Tete<span>Accessories</span></a>
+                </div>
+                <p>Handcrafted jewelry that adds elegance and sparkle to your everyday style. Made with love in Uganda.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Customer Care</h3>
+                <ul>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Care Instructions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> Kampala Road, Kampala, Uganda</li>
+                    <li><i class="fas fa-phone"></i> +256 700 123 456</li>
+                    <li><i class="fas fa-envelope"></i> info@teteaccessories.com</li>
+                    <li><i class="fas fa-clock"></i> Mon - Sat: 10:00 - 19:00</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tete Accessories. All Rights Reserved.</p>
+            <div class="payment-methods">
+                <span>Payment Methods:</span>
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fas fa-mobile-alt"></i> Mobile Money
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay"></div>
+
+    <script src="script.js"></script>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+</body>
+</html>
